@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.loading
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-top: 5px solid teal;
+    border-right: 5px solid lightgray;
+    border-bottom: 5px solid lightgray;
+    border-left: 5px solid lightgray;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -25px -25px;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate
+{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+}
+
+.info-text
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: gray;
+  transform: translate(-50%,-50%)
+}
